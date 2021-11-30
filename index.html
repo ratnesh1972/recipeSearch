@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Search</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container py-5">
+        <div class="heading text-center">
+            <h1>Recipe Search</h1>
+        </div>
+        <div class="search-form my-5">
+            <div class="row">
+                <div class="col-md-4 offset-md-4 p-4">
+                    <form id="form">
+                        <div class="form-group mb-3">
+                            <label for="content" class="form-label">Main Ingredient</label>
+                            <input type="text" class="form-control" name="content" id="content"
+                                placeholder="For ex. Chicken" required>
+                        </div>
+                        <div class="form-group mb-3">
+                            <label for="meal_type" class="form-label">Meal Type</label>
+                            <select name="meal_type" id="meal_type" class="form-select">
+                                <option value="Breakfast" selected>Breakfast</option>
+                                <option value="Lunch">Lunch</option>
+                                <option value="Dinner">Dinner</option>
+                                <option value="Snack">Snack</option>
+                                <option value="Teatime">Teatime</option>
+                            </select>
+                        </div>
+                        <div class="form-group mb-3">
+                            <label for="cuisine_type" class="form-label">Meal Type</label>
+                            <select name="cuisine_type" id="cuisine_type" class="form-select">
+                                <option value="American">American</option>
+                                <option value="Asian">Asian</option>
+                                <option value="British">British</option>
+                                <option value="Caribbean">Caribbean</option>
+                                <option value="Central Europe">Central Europe</option>
+                                <option value="Chinese">Chinese</option>
+                                <option value="Eastern Europe">Eastern Europe</option>
+                                <option value="French">French</option>
+                                <option value="Indian" selected>Indian</option>
+                                <option value="Italian">Italian</option>
+                                <option value="Japanese">Japanese</option>
+                                <option value="Kosher">Kosher</option>
+                                <option value="Mediterranean">Mediterranean</option>
+                                <option value="Mexican">Mexican</option>
+                                <option value="Middle Eastern">Middle Eastern</option>
+                                <option value="Nordic">Nordic</option>
+                                <option value="South American">South American</option>
+                                <option value="South East Asian">South East Asian</option>
+                            </select>
+                        </div>
+
+                        <input type="submit" class="form-control btn-primary" value="Search Recipes">
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="heading text-center">
+            <h1>Results</h1>
+        </div>
+        <div id="root">
+        </div>
+    </div>
+
+    <script src="./app.js"></script>
+</body>
+
+</html>
